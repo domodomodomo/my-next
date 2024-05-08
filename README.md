@@ -40,6 +40,8 @@ export default function Home() {
 
 ## 4. いじったファイル
 
+`npx create-next-app@latest` して以降、主にいじったファイル
+
 ```
 $ tree app 
 app
