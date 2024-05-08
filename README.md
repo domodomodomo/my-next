@@ -22,7 +22,6 @@ npm run dev
 クライアント - サーバ - クライアント でサンドイッチにする。
 
 ```
-$ // `npx create-next-app@latest` して以降、主にいじったファイル
 $ tree app 
 app
 ├── Context.tsx  // クライアントコンポーネント
@@ -41,7 +40,6 @@ import ClientB from "@/app/ClientB"
 export default function Home() {
   return (
     <ContextProvider>
-      {process.env.PWD}
       <ClientA />
       <ClientB />
     </ContextProvider>
