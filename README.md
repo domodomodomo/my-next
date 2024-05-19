@@ -36,7 +36,7 @@ $
 
 
 ```ts
-// page.tsx
+// app/page.tsx
 import { ContextProvider } from "@/app/Context"
 import ClientA from "@/app/ClientA"
 import ClientB from "@/app/ClientB"
