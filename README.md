@@ -4,7 +4,7 @@
 
 ## 1. 背景
 
-以下の記事を見て勉強させていただきましたが React の初心者で詰まってしまったので再現いました。
+以下の記事を見て勉強させていただきましたが React の初心者で詰まってしまったので再現しました。
 
 * [React Server ComponentでもContextで状態を共有する](https://future-architect.github.io/articles/20231214a/)
 
