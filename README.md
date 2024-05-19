@@ -29,8 +29,8 @@ $ tree app
 app
 ├── Context.tsx  // クライアントコンポーネント
 ├── page.tsx     // サーバコンポーネント
-├── ClientB.tsx  // クライアントコンポーネント
-└── ClientA.tsx  // クライアントコンポーネント
+├── ClientA.tsx  // クライアントコンポーネント
+└── ClientB.tsx  // クライアントコンポーネント
 $
 ```
 
