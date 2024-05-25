@@ -22,33 +22,17 @@ npm run dev
 
 ## 3. 要点
 
-クライアント - サーバ - クライアント でサンドイッチにする。
+クライアント `Context.tsx` - サーバ `layout.tsx`, `page.tsx` - クライアント `ClietnA`, `ClientB` でサンドイッチにする。
 
 ```
 $ tree app 
 app
-├── Context.tsx  // クライアントコンポーネント
-├── page.tsx     // サーバコンポーネント
-├── ClientA.tsx  // クライアントコンポーネント
-└── ClientB.tsx  // クライアントコンポーネント
+├── Context.tsx              // クライアントコンポーネント
+├────── layout.tsx           // サーバコンポーネント
+├────────── page.tsx         // サーバコンポーネント
+├────────────── ClientA.tsx  // クライアントコンポーネント
+└────────────── ClientB.tsx  // クライアントコンポーネント
 $
-```
-
-
-```ts
-// app/page.tsx
-import { ContextProvider } from "@/app/Context"
-import ClientA from "@/app/ClientA"
-import ClientB from "@/app/ClientB"
-export default function Home() {
-  return (
-    <ContextProvider>
-      <ClientA />
-      <ClientB />
-    </ContextProvider>
-  )
-}
-
 ```
 
 
