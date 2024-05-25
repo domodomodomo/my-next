@@ -9,11 +9,13 @@ type ContextType =
     }
   | undefined
 
-export const Context = createContext<ContextType>(undefined)
+export const context = createContext<ContextType>(undefined)
 
-export function ContextProvider({ children }: { children: ReactNode }) {
+export default function Context({ children }: { children: ReactNode }) {
   const [state, setState] = useState(0)
   return (
-    <Context.Provider value={{ state, setState }}>{children}</Context.Provider>
+    <context.Provider value={{ state, setState }}>
+      {children}
+    </context.Provider>
   )
 }
