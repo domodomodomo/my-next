@@ -3,11 +3,7 @@ import { useContext } from "react"
 import { context } from "@/app/Context"
 
 export default function ClientB() {
-  const result = useContext(context)
-  if (result === undefined) {
-    throw new Error("useContext must be inside a Provider with a value")
-  }
-  const { state, setState } = result
+  const { state, setState } = useContext(context)
   return (
     <div>
       Current State: {state}
