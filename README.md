@@ -35,7 +35,7 @@ app
 $
 ```
 ```tsx
-// app/Context.tsx
+// app/layout.tsx 
 import Context from "@/app/Context"
 
 export default function RootLayout({
