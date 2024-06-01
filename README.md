@@ -34,7 +34,23 @@ app
 └────────────── ClientB.tsx  // クライアントコンポーネント
 $
 ```
+```tsx
+// app/Context.tsx
+import Context from "@/app/Context"
 
-
-
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html>
+      <body>
+        {/* ポイント: サーバコンポーネントを Context でラップするだけ */}
+        <Context>{children}</Context>
+      </body>
+    </html>
+  )
+}
+```
 

@@ -1,3 +1,4 @@
+// app/Context.tsx
 import Context from "@/app/Context"
 
 export default function RootLayout({
@@ -8,9 +9,8 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <Context>
-          {children}
-        </Context>
+        {/* You can wrap this children, server component, by Context */}
+        <Context>{children}</Context>
       </body>
     </html>
   )
